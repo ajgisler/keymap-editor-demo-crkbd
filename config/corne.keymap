@@ -1,5 +1,4 @@
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 
@@ -114,8 +113,8 @@
       #binding-cells = <2>;
       label = "HOMEROW_MODS_LEFT_HAND";
       bindings = <&kp>, <&kp>;
-      tapping-term-ms = <200>;
 
+      tapping-term-ms = <200>;
       hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
     };
     hmr: homewrow_mods_right {
@@ -123,8 +122,8 @@
       #binding-cells = <2>;
       label = "HOMEROW_MODS_RIGHT_HAND";
       bindings = <&kp>, <&kp>;
-      tapping-term-ms = <200>;
 
+      tapping-term-ms = <200>;
       hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
     };
     capdance: capdance {
@@ -161,10 +160,10 @@
 
     base {
       bindings = <
-        &kp TAB    &kp Q         &kp W         &kp E        &kp R                                    &kp T        &kp Y    &kp U                                     &kp I        &kp O         &kp P            &kp BSLH
-        &capdance  &hml LSHFT A  &hml LCTRL S  &hml LALT D  &hml LCMD F                              &kp G        &kp H    &hmr RCMD J                               &hmr RALT K  &hmr RCTRL L  &hmr RSHFT SEMI  &kp APOS
-        &kp LSHFT  &kp Z         &kp X         &kp C        &kp V                                    &kp B        &kp N    &kp M                                     &kp COMMA    &kp DOT       &kp FSLH         &kp ESC
-                                               &kp LGUI     &rgblayer 1 RGB_COLOR_HSB_VAL(80,70,50)  &kp SPACE    &kp RET  &rgblayer 2 RGB_COLOR_HSB_VAL(180,70,50)  &kp RALT
+        &kp TAB    &kp Q  &kp W  &kp F         &kp P          &kp B                    &kp J    &kp L     &kp U         &kp Y    &kp SEMI  &kp DOWN
+        &kp RIGHT  &kp A  &kp R  &kp S         &kp T          &kp G                    &kp M    &kp N     &kp E         &kp I    &kp O     &kp LS(DQT)
+        &kp LSHFT  &kp Z  &kp X  &kp C         &kp D          &kp V                    &kp K    &kp H     &kp COMMA     &kp DOT  &kp FSLH  &kp ESC
+                                 &lt 1 DELETE  &kp BACKSPACE  &hml LEFT_SHIFT SPACE    &kp RET  &kp BSPC  &lt 2 DELETE
       >;
 
       sensor-bindings = <&rgbknob RGB_HUI RGB_HUD>, <&rgbknob RGB_BRI RGB_BRD>;
@@ -172,10 +171,10 @@
 
     raise {
       bindings = <
-        &trans      &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
-        &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
-        &trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                                &trans        &trans        &trans          &trans  &trans  &trans
+        &kp SPACE         &kp N1             &kp N2          &kp N3           &kp N4                &kp N5                   &kp EQUAL  &kp N7        &kp N8  &kp N9        &kp N0        &kp SPACE
+        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp PLUS   &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp ASTERISK  &kp PERCENT
+        &kp GRAVE         &kp PIPE           &kp AMPERSAND   &kp LESS_THAN    &kp GREATER_THAN      &kp DOUBLE_QUOTES        &kp COMMA  &kp N1        &kp N2  &kp N3        &kp SLASH     &kp CARET
+                                                             &kp SPACE        &kp SPACE             &to 0                    &kp SPACE  &kp PERIOD    &kp N0
       >;
 
       sensor-bindings = <&volknob>;
@@ -183,10 +182,10 @@
 
     lower {
       bindings = <
-        &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp STAR  &kp LPAR  &kp RPAR  &trans
-        &trans  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
-        &trans  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
-                                  &trans    &trans    &trans       &trans     &trans     &trans
+        &trans   &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp STAR  &kp LPAR  &kp RPAR  &trans
+        &kp DEL  &kp ESC   &kp F2  &kp F7    &kp F8    &kp F9       &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
+        &trans   &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
+                                   &trans    &trans    &trans       &trans     &trans     &trans
       >;
     };
 
