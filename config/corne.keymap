@@ -144,6 +144,24 @@
       #sensor-binding-cells = <2>;
       bindings = <&rgb_ug>, <&rgb_ug>;
     };
+    jc: jc {
+      compatible = "zmk,behavior-tap-dance";
+      label = "JC";
+      #binding-cells = <0>;
+      bindings = <&kp J>, <&kp K_COPY>;
+    };
+    mc: mc {
+      compatible = "zmk,behavior-tap-dance";
+      label = "MC";
+      #binding-cells = <0>;
+      bindings = <&kp M>, <&kp K_CUT>;
+    };
+    kpa: kpa {
+      compatible = "zmk,behavior-tap-dance";
+      label = "KPA";
+      #binding-cells = <0>;
+      bindings = <&kp K>, <&kp K_PASTE>;
+    };
   };
 
   conditional_layers {
@@ -160,9 +178,9 @@
 
     base {
       bindings = <
-        &kp TAB    &kp Q  &kp W  &kp F         &kp P          &kp B                    &kp J    &kp L     &kp U         &kp Y    &kp SEMI  &kp DOWN
-        &kp RIGHT  &kp A  &kp R  &kp S         &kp T          &kp G                    &kp M    &kp N     &kp E         &kp I    &kp O     &kp LS(DQT)
-        &kp LSHFT  &kp Z  &kp X  &kp C         &kp D          &kp V                    &kp K    &kp H     &kp COMMA     &kp DOT  &kp FSLH  &kp ESC
+        &kp TAB    &kp Q  &kp W  &kp F         &kp P          &kp B                    &jc      &kp L     &kp U         &kp Y    &kp SEMI  &kp DOWN
+        &kp RIGHT  &kp A  &kp R  &kp S         &kp T          &kp G                    &mc      &kp N     &kp E         &kp I    &kp O     &kp LS(DQT)
+        &kp LSHFT  &kp Z  &kp X  &kp C         &kp D          &kp V                    &kpa     &kp H     &kp COMMA     &kp DOT  &kp FSLH  &kp ESC
                                  &lt 1 DELETE  &kp BACKSPACE  &hml LEFT_SHIFT SPACE    &kp RET  &kp BSPC  &lt 2 DELETE
       >;
 
