@@ -49,30 +49,24 @@
       key-positions = <32 33>;
       bindings = <&kp DEL>;
     };
+
+    copy {
+      bindings = <&kp K_COPY>;
+      key-positions = <3 4>;
+    };
+
+    cut {
+      bindings = <&kp K_CUT>;
+      key-positions = <16 15>;
+    };
+
+    paste {
+      bindings = <&kp K_PASTE>;
+      key-positions = <28 27>;
+    };
   };
 
   macros {
-    greeting: greeting {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      label = "greeting";
-      bindings = <&kp H &kp E &kp L &kp L &kp O>;
-    };
-    rgblayer: rgb_layer {
-      compatible = "zmk,behavior-macro-two-param";
-      #binding-cells = <2>;
-      label = "MOMENTARY_LAYER_WITH_RGB_COLOR";
-      bindings
-        = <&macro_param_2to2 &rgb_ug RGB_COLOR_HSB_CMD MACRO_PLACEHOLDER &macro_param_1to1>
-        , <&macro_press>
-        , <&mo MACRO_PLACEHOLDER>
-        , <&macro_pause_for_release>
-        , <&macro_release>
-        , <&macro_param_1to1 &mo 0>
-        , <&macro_tap>
-        , <&rgb_ug RGB_TOG>
-        ;
-    };
     shift: with_lshift {
       compatible = "zmk,behavior-macro-one-param";
       #binding-cells = <1>;
@@ -179,10 +173,10 @@
 
     base {
       bindings = <
-        &kp TAB    &kp Q  &kp W  &kp F         &kp P          &kp B                    &jc      &kp L     &kp U         &kp Y    &kp SEMI  &kp F2
-        &kp TAB    &kp A  &kp R  &kp S         &kp T          &kp G                    &mc      &kp N     &kp E         &kp I    &kp O     &kp LS(DQT)
-        &kp LSHFT  &kp Z  &kp X  &kp C         &kp D          &kp V                    &kpa     &kp H     &kp COMMA     &kp DOT  &kp FSLH  &kp ESC
-                                 &lt 2 DELETE  &kp BACKSPACE  &hml LEFT_SHIFT SPACE    &kp RET  &kp BSPC  &lt 1 DELETE
+        &kp TAB    &kp Q  &kp W  &kp F         &kp P          &kp B                    &jc        &kp L     &kp U         &kp Y    &kp SEMI  &kp F2
+        &kp TAB    &kp A  &kp R  &kp S         &kp T          &kp G                    &mc        &kp N     &kp E         &kp I    &kp O     &kp LS(DQT)
+        &kp LSHFT  &kp Z  &kp X  &kp C         &kp D          &kp V                    &kpa       &kp H     &kp COMMA     &kp DOT  &kp FSLH  &kp ESC
+                                 &lt 2 DELETE  &kp BACKSPACE  &hml LEFT_SHIFT SPACE    &lt 5 RET  &kp BSPC  &lt 1 DELETE
       >;
     };
 
@@ -224,12 +218,12 @@
       >;
     };
 
-    ARR {
+    layer_5 {
       bindings = <
-        &trans  &trans        &trans        &trans        &trans  &trans    &trans  &trans          &kp UP_ARROW  &trans     &trans  &trans
-        &trans  &bt BT_SEL 0  &bt BT_SEL 2  &bt BT_SEL 3  &trans  &trans    &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans  &trans
-        &trans  &trans        &trans        &trans        &trans  &trans    &trans  &trans          &trans        &trans     &trans  &trans
-                                            &to 2         &trans  &to 0     &trans  &trans          &to 1
+        &trans      &trans        &trans        &trans        &trans  &trans    &trans  &trans          &kp UP_ARROW  &trans     &trans  &trans
+        &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 2  &bt BT_SEL 3  &trans  &trans    &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans  &trans
+        &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans    &trans  &trans          &trans        &trans     &trans  &trans
+                                                &to 2         &trans  &to 0     &trans  &trans          &to 1
       >;
     };
   };
