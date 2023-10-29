@@ -173,10 +173,10 @@
 
     base {
       bindings = <
-        &kp TAB    &kp Q  &kp W  &kp F         &kp P          &kp B                    &jc        &kp L     &kp U         &kp Y    &kp SEMI  &kp F2
-        &kp TAB    &kp A  &kp R  &kp S         &kp T          &kp G                    &mc        &kp N     &kp E         &kp I    &kp O     &kp LS(DQT)
-        &kp LSHFT  &kp Z  &kp X  &kp C         &kp D          &kp V                    &kpa       &kp H     &kp COMMA     &kp DOT  &kp FSLH  &kp ESC
-                                 &lt 2 DELETE  &kp BACKSPACE  &hml LEFT_SHIFT SPACE    &lt 5 RET  &kp BSPC  &lt 1 DELETE
+        &kp TAB    &kp Q  &kp W  &kp F         &kp P            &kp B                    &kp J                 &kp L     &kp U         &kp Y    &kp SEMI  &kp F2
+        &kp TAB    &kp A  &kp R  &kp S         &kp T            &mt LEFT_ALT G           &mt LCTRL M           &kp N     &kp E         &kp I    &kp O     &kp LS(DQT)
+        &kp LSHFT  &kp Z  &kp X  &kp C         &kp D            &lt 2 V                  &lt 4 K               &kp H     &kp COMMA     &kp DOT  &kp FSLH  &kp ESC
+                                 &lt 2 DELETE  &lt 1 BACKSPACE  &hml LEFT_SHIFT SPACE    &hmr RIGHT_SHIFT RET  &kp BSPC  &lt 1 DELETE
       >;
     };
 
@@ -194,17 +194,8 @@
       bindings = <
         &kp SPACE         &kp N1             &kp N2          &kp N3           &kp N4                &kp N5                   &kp EQUAL  &kp N7        &kp N8  &kp N9        &kp N0        &kp SPACE
         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp PLUS   &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp ASTERISK  &kp PERCENT
-        &kp GRAVE         &kp PIPE           &kp AMPERSAND   &kp LESS_THAN    &kp GREATER_THAN      &kp DOUBLE_QUOTES        &kp COMMA  &kp N1        &kp N2  &kp N3        &kp SLASH     &kp CARET
-                                                             &kp SPACE        &kp SPACE             &to 0                    &kp SPACE  &kp PERIOD    &kp N0
-      >;
-    };
-
-    both {
-      bindings = <
-        &rgb_ug RGB_COLOR_HSB(0,80,60)  &rgb_ug RGB_COLOR_HSB(20,80,60)  &rgb_ug RGB_COLOR_HSB(40,80,60)  &rgb_ug RGB_COLOR_HSB(60,80,60)  &rgb_ug RGB_COLOR_HSB(80,80,60)  &rgb_ug RGB_COLOR_HSB(100,80,60)    &rgb_ug RGB_COLOR_HSB(120,80,60)  &rgb_ug RGB_COLOR_HSB(140,80,60)  &rgb_ug RGB_COLOR_HSB(160,80,60)  &rgb_ug RGB_COLOR_HSB(180,80,60)  &rgb_ug RGB_COLOR_HSB(200,80,60)  &rgb_ug RGB_COLOR_HSB(220,80,60)
-        &rgb_ug RGB_COLOR_HSB(0,60,40)  &rgb_ug RGB_COLOR_HSB(20,60,40)  &rgb_ug RGB_COLOR_HSB(40,60,40)  &rgb_ug RGB_COLOR_HSB(60,60,40)  &rgb_ug RGB_COLOR_HSB(80,60,40)  &rgb_ug RGB_COLOR_HSB(100,60,40)    &rgb_ug RGB_COLOR_HSB(120,60,40)  &rgb_ug RGB_COLOR_HSB(140,60,40)  &rgb_ug RGB_COLOR_HSB(160,60,40)  &rgb_ug RGB_COLOR_HSB(180,60,40)  &rgb_ug RGB_COLOR_HSB(200,60,40)  &rgb_ug RGB_COLOR_HSB(220,60,40)
-        &rgb_ug RGB_COLOR_HSB(0,80,30)  &rgb_ug RGB_COLOR_HSB(20,80,30)  &rgb_ug RGB_COLOR_HSB(40,80,30)  &rgb_ug RGB_COLOR_HSB(60,80,30)  &rgb_ug RGB_COLOR_HSB(80,80,30)  &rgb_ug RGB_COLOR_HSB(100,80,30)    &rgb_ug RGB_COLOR_HSB(120,80,30)  &rgb_ug RGB_COLOR_HSB(140,80,30)  &rgb_ug RGB_COLOR_HSB(160,80,30)  &rgb_ug RGB_COLOR_HSB(180,80,30)  &rgb_ug RGB_COLOR_HSB(200,80,30)  &rgb_ug RGB_COLOR_HSB(220,80,30)
-                                                                                                          &trans                           &trans                           &trans                              &trans                            &trans                            &trans
+        &kp GRAVE         &kp PIPE           &kp AMPERSAND   &kp LESS_THAN    &kp GREATER_THAN      &none                    &kp COMMA  &kp N1        &kp N2  &kp N3        &kp SLASH     &kp CARET
+                                                             &kp SPACE        &kp SPACE             &kp LEFT_SHIFT           &kp SPACE  &kp PERIOD    &kp N0
       >;
     };
 
@@ -220,10 +211,10 @@
     NAV {
       label = NAV;
       bindings = <
-        &trans      &trans        &trans        &trans        &trans  &trans    &trans  &trans          &kp UP_ARROW  &trans     &trans  &trans
-        &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 2  &bt BT_SEL 3  &trans  &trans    &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans  &trans
-        &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans    &trans  &trans          &trans        &trans     &trans  &trans
-                                                &to 2         &trans  &to 0     &trans  &trans          &to 1
+        &trans   &trans   &trans    &kp UP_ARROW  &trans      &trans            &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans
+        &kp DEL  &kp DEL  &kp LEFT  &kp DOWN      &kp RIGHT   &kp LEFT_SHIFT    &trans      &none         &none         &none         &trans        &trans
+        &none    &none    &trans    &trans        &trans      &trans            &kp LCTRL   &trans        &trans        &trans        &trans        &trans
+                                    &to 2         &kp DELETE  &kp LEFT_SHIFT    &kp LSHIFT  &trans        &to 1
       >;
     };
   };
