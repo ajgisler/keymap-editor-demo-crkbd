@@ -172,6 +172,7 @@
     compatible = "zmk,keymap";
 
     base {
+      label = "BASE";
       bindings = <
         &kp TAB    &kp Q  &kp W  &kp F         &kp P            &kp B                    &kp J                 &kp L     &kp U         &kp Y    &kp SEMI  &kp F2
         &kp TAB    &kp A  &kp R  &kp S         &kp T            &mt LEFT_ALT G           &mt LCTRL M           &kp N     &kp E         &kp I    &kp O     &kp LS(DQT)
@@ -190,7 +191,7 @@
     };
 
     NUM {
-      label = NUM; 
+      label = "NUM"; 
       bindings = <
         &kp SPACE         &kp N1             &kp N2          &kp N3           &kp N4                &kp N5                   &kp EQUAL  &kp N7        &kp N8  &kp N9        &kp N0        &kp SPACE
         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp PLUS   &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp ASTERISK  &kp PERCENT
@@ -209,7 +210,7 @@
     };
 
     NAV {
-      label = NAV;
+      label = "NAV";
       bindings = <
         &trans   &trans   &trans    &kp UP_ARROW  &trans      &trans            &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans
         &kp DEL  &kp DEL  &kp LEFT  &kp DOWN      &kp RIGHT   &kp LEFT_SHIFT    &trans      &none         &none         &none         &trans        &trans
