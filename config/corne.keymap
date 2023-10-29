@@ -174,7 +174,7 @@
     base {
       bindings = <
         &kp TAB    &kp Q  &kp W  &kp F         &kp P            &kp B                    &kp J                 &kp L     &kp U         &kp Y    &kp SEMI  &kp F2
-        &kp TAB    &kp A  &kp R  &kp S         &kp T            &mt LEFT_ALT G           &mt RCTRL M           &kp N     &kp E         &kp I    &kp O     &kp LS(DQT)
+        &kp TAB    &kp A  &kp R  &kp S         &kp T            &mt LEFT_ALT G           &mt LCTRL M           &kp N     &kp E         &kp I    &kp O     &kp LS(DQT)
         &kp LSHFT  &kp Z  &kp X  &kp C         &kp D            &lt 2 V                  &lt 4 K               &kp H     &kp COMMA     &kp DOT  &kp FSLH  &kp ESC
                                  &lt 2 DELETE  &lt 1 BACKSPACE  &hml LEFT_SHIFT SPACE    &hmr RIGHT_SHIFT RET  &kp BSPC  &lt 1 DELETE
       >;
@@ -211,10 +211,10 @@
 
     NAV {
       bindings = <
-        &trans      &trans        &trans        &trans         &trans          &trans            &trans  &trans          &kp UP_ARROW  &trans     &trans  &trans
-        &kp DEL     &kp DEL       &kp DELETE    &kp BACKSPACE  &kp LEFT_SHIFT  &kp LEFT_SHIFT    &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans  &trans
-        &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &trans          &trans            &trans  &trans          &trans        &trans     &trans  &trans
-                                                &to 2          &kp DELETE      &kp LEFT_SHIFT    &trans  &trans          &to 1
+        &trans   &trans   &trans    &kp UP_ARROW  &trans      &trans            &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans
+        &kp DEL  &kp DEL  &kp LEFT  &kp DOWN      &kp RIGHT   &kp LEFT_SHIFT    &trans      &none         &none         &none         &trans        &trans
+        &none    &none    &trans    &trans        &trans      &trans            &kp LCTRL   &trans        &trans        &trans        &trans        &trans
+                                    &to 2         &kp DELETE  &kp LEFT_SHIFT    &kp LSHIFT  &trans        &to 1
       >;
     };
   };
