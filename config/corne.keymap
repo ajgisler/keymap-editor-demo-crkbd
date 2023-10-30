@@ -174,10 +174,10 @@
     base {
       label = "BASE";
       bindings = <
-        &kp TAB    &kp Q  &kp W  &kp F         &kp P            &kp B                    &kp J                 &kp L     &kp U         &kp Y    &kp SEMI  &kp F2
-        &kp TAB    &kp A  &kp R  &kp S         &kp T            &mt LEFT_ALT G           &mt LCTRL M           &kp N     &kp E         &kp I    &kp O     &kp LS(DQT)
-        &kp LSHFT  &kp Z  &kp X  &kp C         &kp D            &lt 2 V                  &lt 4 K               &kp H     &kp COMMA     &kp DOT  &kp FSLH  &kp ESC
-                                 &lt 2 DELETE  &lt 1 BACKSPACE  &hml LEFT_SHIFT SPACE    &hmr RIGHT_SHIFT RET  &kp BSPC  &lt 1 DELETE
+        &kp TAB       &kp Q  &kp W  &kp F   &kp P          &kp B                    &kp J                   &kp L       &kp U      &kp Y    &kp SEMI  &kp F2
+        &kp CAPSLOCK  &kp A  &kp R  &kp S   &kp T          &mt LEFT_ALT G           &mt LCTRL M             &kp N       &kp E      &kp I    &kp O     &kp LS(DQT)
+        &kp LSHFT     &kp Z  &kp X  &kp C   &kp D          &lt 2 V                  &lt 4 K                 &kp H       &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                                    &tog 1  &kp BACKSPACE  &hml LEFT_SHIFT SPACE    &hmr RIGHT_SHIFT ENTER  &kp DELETE  &to 4
       >;
     };
 
@@ -191,7 +191,7 @@
     };
 
     NUM {
-      label = "NUM"; 
+      label = "NUM";
       bindings = <
         &kp SPACE         &kp N1             &kp N2          &kp N3           &kp N4                &kp N5                   &kp EQUAL  &kp N7        &kp N8  &kp N9        &kp N0        &kp SPACE
         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp PLUS   &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp ASTERISK  &kp PERCENT
