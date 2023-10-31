@@ -26,16 +26,6 @@
       bindings = <&kp LCTRL>;
     };
 
-    cmd {
-      key-positions = <37 38>;
-      bindings = <&kp LCMD>;
-    };
-
-    alt {
-      key-positions = <39 40>;
-      bindings = <&kp LEFT_ALT>;
-    };
-
     shift {
       key-positions = <8 9>;
       bindings = <&kp LSHIFT>;
@@ -204,9 +194,9 @@
 
     autoshift {
       bindings = <
-        &trans  &as Q  &as W  &as E   &as R   &as T     &as Y   &as U   &as I   &as O   &as P   &trans
-        &trans  &as A  &as S  &as D   &as F   &as G     &as H   &as J   &as K   &as L   &trans  &trans
-        &trans  &as Z  &as X  &as C   &as V   &as B     &as N   &as M   &trans  &trans  &trans  &trans
+        &trans  &as Q  &as W  &kp F   &kp P   &kp B     &kp J   &kp L   &kp I      &kp L       &kp SEMICOLON  &trans
+        &trans  &kp A  &kp R  &kp S   &kp F   &kp G     &kp M   &kp N   &kp E      &kp I       &kp O          &trans
+        &trans  &as Z  &as X  &as C   &kp D   &kp V     &kp K   &kp H   &kp COMMA  &kp PERIOD  &kp SLASH      &trans
                               &trans  &trans  &trans    &trans  &trans  &trans
       >;
     };
@@ -216,7 +206,7 @@
       bindings = <
         &trans   &trans   &trans    &kp UP_ARROW  &trans     &trans            &bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
         &kp DEL  &kp DEL  &kp LEFT  &kp DOWN      &kp RIGHT  &kp LEFT_SHIFT    &trans          &none         &none         &none         &trans        &out OUT_TOG
-        &none    &none    &trans    &trans        &trans     &trans            &kp LCTRL       &trans        &trans        &trans        &trans        &trans
+        &none    &none    &trans    &trans        &kp LCMD   &trans            &kp LCTRL       &trans        &trans        &trans        &trans        &trans
                                     &trans        &trans     &to 0             &kp LEFT_SHIFT  &to 1         &to 0
       >;
     };
