@@ -177,20 +177,20 @@
     SYM {
       label = "SYM";
       bindings = <
-        &trans   &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp MINUS    &kp SLASH        &kp AMPS              &kp PIPE               &kp PERCENT        &kp CARET        &trans
-        &kp DEL  &kp ESC   &kp F2  &kp F7    &kp F8    &kp F9       &kp EQUAL        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE     &kp RIGHT_BRACE  &kp GRAVE
-        &trans   &trans    &trans  &trans    &trans    &trans       &kp EXCLAMATION  &kp PLUS              &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &kp ASTERISK     &kp TILDE
-                                   &trans    &trans    &to 0        &trans           &trans                &trans
+        &trans   &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp MINUS      &kp SLASH        &kp AMPS              &kp PIPE               &kp PERCENT        &kp CARET        &trans
+        &kp DEL  &kp ESC   &kp F2  &kp F7    &kp F8    &kp F9         &kp EQUAL        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE     &kp RIGHT_BRACE  &kp GRAVE
+        &trans   &trans    &kp F1  &kp F2    &kp F6    &trans         &kp EXCLAMATION  &kp PLUS              &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &kp ASTERISK     &kp TILDE
+                                   &trans    &trans    &lt 0 SPACE    &trans           &trans                &trans
       >;
     };
 
     NUM {
       label = "NUM";
       bindings = <
-        &kp SPACE         &kp N1             &kp N2          &kp N3           &kp MINUS             &kp N5                   &kp EQUAL  &kp N7        &kp N8  &kp N9        &kp N0        &kp SPACE
-        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp PLUS   &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp ASTERISK  &kp PERCENT
-        &kp GRAVE         &kp PIPE           &kp AMPERSAND   &kp LESS_THAN    &kp GREATER_THAN      &none                    &kp COMMA  &kp N1        &kp N2  &kp N3        &kp SLASH     &kp CARET
-                                                             &trans           &trans                &to 0                    &trans     &kp PERIOD    &kp N0
+        &kp SPACE         &kp N1             &kp N2          &kp N3                       &kp MINUS             &kp N5                   &kp EQUAL  &kp N7        &kp N8               &kp N9        &kp N0        &kp SPACE
+        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &hml LEFT_SHIFT RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp PLUS   &kp NUMBER_4  &hmr RIGHT_SHIFT N5  &kp NUMBER_6  &kp ASTERISK  &kp PERCENT
+        &kp GRAVE         &kp PIPE           &kp AMPERSAND   &kp LESS_THAN                &kp GREATER_THAN      &none                    &kp MINUS  &kp N1        &kp N2               &kp N3        &kp SLASH     &kp CARET
+                                                             &trans                       &trans                &to 0                    &trans     &kp PERIOD    &kp N0
       >;
     };
 
