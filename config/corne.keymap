@@ -21,14 +21,9 @@
       bindings = <&kp TAB>;
     };
 
-    ctrl {
-      key-positions = <26 27>;
-      bindings = <&kp LCTRL>;
-    };
-
-    shift {
+    exclamation {
       key-positions = <8 9>;
-      bindings = <&kp LSHIFT>;
+      bindings = <&kp EXCLAMATION>;
     };
 
     caps_word {
@@ -43,7 +38,7 @@
 
     copy {
       bindings = <&kp K_COPY>;
-      key-positions = <3 4>;
+      key-positions = <4 3>;
     };
 
     cut {
