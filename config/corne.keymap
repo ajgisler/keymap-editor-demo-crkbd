@@ -149,11 +149,6 @@
   conditional_layers {
     compatible = "zmk,conditional-layers";
 
-    tri_layer {
-      if-layers = <1 5>;
-      then-layer = <4>;
-    };
-
     BT {
       if-layers = <2 1>;
       then-layer = <5>;
