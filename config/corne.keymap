@@ -200,9 +200,9 @@
     NAV {
       label = "NAV";
       bindings = <
-        &trans   &trans   &trans                &kp UP_ARROW          &trans            &trans            &none      &none            &kp PG_UP      &none               &none         &none
-        &kp DEL  &kp DEL  &hml LALT LEFT_ARROW  &hml LEFT_SHIFT DOWN  &hml RCTRL RIGHT  &kp LEFT_SHIFT    &kp HOME   &hmr RCTRL HOME  &kp PAGE_DOWN  &hmr RIGHT_ALT END  &mt RCMD END  &none
-        &none    &none    &trans                &trans                &kp LCMD          &trans            &kp LCTRL  &trans           &trans         &trans              &trans        &trans
+        &trans   &trans   &trans                &kp UP_ARROW          &trans            &trans            &none      &none            &kp PG_UP                  &none               &none         &none
+        &kp DEL  &kp DEL  &hml LALT LEFT_ARROW  &hml LEFT_SHIFT DOWN  &hml RCTRL RIGHT  &kp LEFT_SHIFT    &kp HOME   &hmr RCTRL HOME  &mt RIGHT_SHIFT PAGE_DOWN  &hmr RIGHT_ALT END  &mt RCMD END  &none
+        &none    &none    &trans                &trans                &kp LCMD          &trans            &kp LCTRL  &trans           &trans                     &trans              &trans        &trans
                                                 &trans                &trans            &lt 2 SPACE       &kp ENTER  &to 1            &to 0
       >;
     };
