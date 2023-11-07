@@ -154,6 +154,11 @@
       if-layers = <1 4>;
       then-layer = <3>;
     };
+
+    BT {
+      if-layers = <2>;
+      then-layer = <1>;
+    };
   };
 
   keymap {
@@ -163,7 +168,7 @@
       label = "BASE";
       bindings = <
         &kp TAB       &kp Q        &kp W            &kp F              &kp P          &kp B          &kp J    &kp L         &kp U               &kp Y        &kp SEMI     &kp MINUS
-        &kp CAPSLOCK  &hml LGUI A  &hml LEFT_ALT R  &hml LEFT_SHIFT S  &hml LCTRL T   &kp G          &kp M    &hmr RCTRL N  &hmr RIGHT_SHIFT E  &hmr RALT I  &hmr RGUI O  &kp SINGLE_QUOTE
+        &kp CAPSLOCK  &hml LGUI A  &hml LEFT_ALT R  &hml LEFT_SHIFT S  &hml LCTRL T   &kp G          &kp M    &hmr RCTRL N  &hmr RIGHT_SHIFT E  &hmr RALT I  &hmr RWIN O  &kp SINGLE_QUOTE
         &kp LSHFT     &kp Z        &kp X            &kp C              &kp D          &kp V          &kp K    &kp H         &kp COMMA           &kp DOT      &kp FSLH     &kp ESC
                                                     &mo 1              &kp BACKSPACE  &lt 2 SPACE    &kp RET  &kp DELETE    &to 4
       >;
@@ -172,20 +177,20 @@
     SYM {
       label = "SYM";
       bindings = <
-        &trans   &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp MINUS      &kp SLASH        &kp AMPS              &kp PIPE               &kp PERCENT        &kp CARET        &trans
-        &kp DEL  &kp ESC   &kp F2  &kp F7    &kp F8    &kp F9         &kp EQUAL        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE     &kp RIGHT_BRACE  &kp GRAVE
-        &trans   &trans    &kp F1  &kp F2    &kp F6    &trans         &kp EXCLAMATION  &kp PLUS              &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &kp ASTERISK     &kp TILDE
-                                   &trans    &trans    &lt 0 SPACE    &trans           &trans                &trans
+        &trans   &kp EXCL  &kp F7            &kp F7              &kp F9         &kp MINUS      &kp SLASH        &kp AMPS              &kp PIPE               &kp PERCENT        &kp CARET        &trans
+        &kp DEL  &kp ESC   &hml LEFT_ALT F4  &hml LEFT_SHIFT F5  &hml LCTRL F6  &kp DOLLAR     &kp EQUAL        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE     &kp RIGHT_BRACE  &kp GRAVE
+        &trans   &kp HASH  &kp F1            &kp F2              &kp F3         &kp AT_SIGN    &kp EXCLAMATION  &kp PLUS              &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &kp ASTERISK     &kp TILDE
+                                             &trans              &trans         &lt 0 SPACE    &trans           &trans                &trans
       >;
     };
 
     NUM {
       label = "NUM";
       bindings = <
-        &kp SPACE         &kp N1             &kp N2          &kp N3                       &kp MINUS             &kp N5                   &kp EQUAL  &kp N7        &kp N8               &kp N9        &kp N0        &kp SPACE
-        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &hml LEFT_SHIFT RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp PLUS   &kp NUMBER_4  &hmr RIGHT_SHIFT N5  &kp NUMBER_6  &kp ASTERISK  &kp PERCENT
-        &kp GRAVE         &kp PIPE           &kp AMPERSAND   &kp LESS_THAN                &kp GREATER_THAN      &none                    &kp MINUS  &kp N1        &kp N2               &kp N3        &kp SLASH     &kp CARET
-                                                             &trans                       &trans                &to 0                    &trans     &kp PERIOD    &kp N0
+        &kp SPACE         &kp N1                   &kp N2                    &kp N3                       &kp MINUS                    &kp N5                   &kp EQUAL  &kp N7               &kp N8               &kp N9                   &kp N0              &kp SPACE
+        &kp LEFT_BRACKET  &hml LWIN RIGHT_BRACKET  &hml LEFT_ALT LEFT_BRACE  &hml LEFT_SHIFT RIGHT_BRACE  &hml LCTRL LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp PLUS   &hmr RCTRL NUMBER_4  &hmr RIGHT_SHIFT N5  &hmr RIGHT_ALT NUMBER_6  &hmr ASTERISK RWIN  &kp PERCENT
+        &kp GRAVE         &kp PIPE                 &kp AMPERSAND             &kp LESS_THAN                &kp GREATER_THAN             &none                    &kp MINUS  &kp N1               &kp N2               &kp N3                   &kp SLASH           &kp CARET
+                                                                             &trans                       &trans                       &to 0                    &trans     &kp PERIOD           &kp N0
       >;
     };
 
@@ -201,11 +206,22 @@
     NAV {
       label = "NAV";
       bindings = <
-        &trans   &trans   &trans    &kp UP_ARROW  &trans     &trans            &bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-        &kp DEL  &kp DEL  &kp LEFT  &kp DOWN      &kp RIGHT  &kp LEFT_SHIFT    &trans          &none         &none         &none         &trans        &out OUT_TOG
-        &none    &none    &trans    &trans        &kp LCMD   &trans            &kp LCTRL       &trans        &trans        &trans        &trans        &trans
-                                    &trans        &trans     &to 0             &kp LEFT_SHIFT  &to 1         &to 0
+        &trans   &trans   &trans    &kp UP_ARROW  &trans     &trans            &none      &none            &none   &none               &none         &none
+        &kp DEL  &kp DEL  &kp LEFT  &kp DOWN      &kp RIGHT  &kp LEFT_SHIFT    &kp HOME   &hmr RCTRL HOME  &trans  &hmr RIGHT_ALT END  &mt RCMD END  &out OUT_TOG
+        &none    &none    &trans    &trans        &kp LCMD   &trans            &kp LCTRL  &trans           &trans  &trans              &trans        &trans
+                                    &trans        &trans     &lt 2 SPACE       &kp ENTER  &to 1            &to 0
       >;
+    };
+
+    Bluetooth {
+      bindings = <
+        &trans  &trans  &trans      &trans  &trans      &trans    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+        &trans  &trans  &bt BT_PRV  &trans  &bt BT_NXT  &trans    &trans      &trans        &trans        &trans        &trans        &trans
+        &trans  &trans  &trans      &trans  &trans      &trans    &trans      &trans        &trans        &trans        &trans        &trans
+                                    &trans  &trans      &trans    &to 0       &trans        &trans
+      >;
+
+      label = "Bluetooth";
     };
   };
 };
