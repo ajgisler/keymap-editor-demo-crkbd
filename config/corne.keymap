@@ -179,7 +179,7 @@
         &trans   &kp EXCL  &kp F7            &kp F8              &kp F9         &kp MINUS      &kp SLASH        &kp AMPS              &kp PIPE               &kp PERCENT        &kp CARET        &trans
         &kp DEL  &kp ESC   &hml LEFT_ALT F4  &hml LEFT_SHIFT F5  &hml LCTRL F6  &kp DOLLAR     &kp EQUAL        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE     &kp RIGHT_BRACE  &kp GRAVE
         &trans   &kp HASH  &kp F1            &kp F2              &kp F3         &kp AT_SIGN    &kp EXCLAMATION  &kp PLUS              &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &kp ASTERISK     &kp TILDE
-                                             &trans              &trans         &lt 0 SPACE    &trans           &trans                &trans
+                                             &trans              &trans         &trans         &trans           &trans                &trans
       >;
     };
 
