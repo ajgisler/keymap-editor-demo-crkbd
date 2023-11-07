@@ -169,7 +169,7 @@
         &kp TAB       &kp Q        &kp W            &kp F              &kp P          &kp B          &kp J    &kp L         &kp U               &kp Y        &kp SEMI     &kp MINUS
         &kp CAPSLOCK  &hml LGUI A  &hml LEFT_ALT R  &hml LEFT_SHIFT S  &hml LCTRL T   &kp G          &kp M    &hmr RCTRL N  &hmr RIGHT_SHIFT E  &hmr RALT I  &hmr RWIN O  &kp SINGLE_QUOTE
         &kp LSHFT     &kp Z        &kp X            &kp C              &kp D          &kp V          &kp K    &kp H         &kp COMMA           &kp DOT      &kp FSLH     &kp ESC
-                                                    &mo 1              &kp BACKSPACE  &lt 2 SPACE    &kp RET  &kp DELETE    &to 5
+                                                    &mo 1              &kp BACKSPACE  &lt 2 SPACE    &kp RET  &kp DELETE    &to 4
       >;
     };
 
