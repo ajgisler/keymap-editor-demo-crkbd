@@ -173,8 +173,8 @@
       >;
     };
 
-    SYM {
-      label = "SYM";
+    Function {
+      label = "Function";
       bindings = <
         &trans   &kp EXCL  &kp F7            &kp F8              &kp F9         &kp MINUS      &kp SLASH        &kp AMPS              &kp PIPE               &kp PERCENT        &kp CARET        &trans
         &kp DEL  &kp ESC   &hml LEFT_ALT F4  &hml LEFT_SHIFT F5  &hml LCTRL F6  &kp DOLLAR     &kp EQUAL        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE     &kp RIGHT_BRACE  &kp GRAVE
@@ -183,8 +183,8 @@
       >;
     };
 
-    NUM {
-      label = "NUM";
+    Number {
+      label = "Number";
       bindings = <
         &kp SPACE         &kp N1                   &kp N2                    &kp N3                       &kp MINUS                    &kp N5                   &kp EQUAL  &kp N7               &kp N8               &kp N9                   &kp N0              &kp SPACE
         &kp LEFT_BRACKET  &hml LWIN RIGHT_BRACKET  &hml LEFT_ALT LEFT_BRACE  &hml LEFT_SHIFT RIGHT_BRACE  &hml LCTRL LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp PLUS   &hmr RCTRL NUMBER_4  &hmr RIGHT_SHIFT N5  &hmr RIGHT_ALT NUMBER_6  &hmr ASTERISK RWIN  &kp PERCENT
