@@ -50,6 +50,12 @@
       bindings = <&kp K_PASTE>;
       key-positions = <28 27>;
     };
+
+    doubleShift {
+      bindings = <&key_repeat>;
+      key-positions = <15 20>;
+      layers = <0>;
+    };
   };
 
   macros {
