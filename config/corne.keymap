@@ -178,9 +178,9 @@
     Function {
       label = "Function";
       bindings = <
-        &trans   &kp EXCL  &kp F7            &kp F8              &kp F9         &kp MINUS               &kp SLASH        &kp AMPS                     &kp PIPE                            &kp PERCENT           &kp CARET              &trans
-        &kp DEL  &kp ESC   &hml LEFT_ALT F4  &hml LEFT_SHIFT F5  &hml LCTRL F6  &kp DOLLAR              &kp EQUAL        &hmr RCTRL LEFT_PARENTHESIS  &hmr RIGHT_SHIFT RIGHT_PARENTHESIS  &hml RALT LEFT_BRACE  &hmr RWIN RIGHT_BRACE  &kp GRAVE
-        &trans   &kp HASH  &kp F1            &kp F2              &kp F3         &kp AT_SIGN             &kp EXCLAMATION  &kp PLUS                     &kp LEFT_BRACKET                    &kp RIGHT_BRACKET     &kp ASTERISK           &kp TILDE
+        &trans  &kp EXCL   &kp F7            &kp F8              &kp F9         &kp F10                 &kp SLASH        &kp AMPS                     &kp PIPE                            &kp PERCENT           &kp CARET              &trans
+        &trans  &kp MINUS  &hml LEFT_ALT F4  &hml LEFT_SHIFT F5  &hml LCTRL F6  &kp F11                 &kp EQUAL        &hmr RCTRL LEFT_PARENTHESIS  &hmr RIGHT_SHIFT RIGHT_PARENTHESIS  &hml RALT LEFT_BRACE  &hmr RWIN RIGHT_BRACE  &kp GRAVE
+        &trans  &kp HASH   &kp F1            &kp F2              &kp F3         &kp F12                 &kp EXCLAMATION  &kp PLUS                     &kp LEFT_BRACKET                    &kp RIGHT_BRACKET     &kp ASTERISK           &kp TILDE
                                              &trans              &trans         &mt LEFT_SHIFT SPACE    &trans           &trans                       &trans
       >;
     };
@@ -188,9 +188,9 @@
     Number {
       label = "Number";
       bindings = <
-        &kp SPACE         &kp N1                   &kp N2                    &kp N3                       &kp MINUS                    &kp N5                   &kp EQUAL  &kp N7               &kp N8               &kp N9                   &kp N0              &kp LS(GRAVE)
+        &kp SPACE         &kp HASH                 &kp DOLLAR                &kp AT_SIGN                  &kp MINUS                    &kp N5                   &kp EQUAL  &kp N7               &kp N8               &kp N9                   &kp N0              &kp LS(GRAVE)
         &kp LEFT_BRACKET  &hml LWIN RIGHT_BRACKET  &hml LEFT_ALT LEFT_BRACE  &hml LEFT_SHIFT RIGHT_BRACE  &hml LCTRL LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp PLUS   &hmr RCTRL NUMBER_4  &hmr RIGHT_SHIFT N5  &hmr RIGHT_ALT NUMBER_6  &hmr ASTERISK RWIN  &kp PERCENT
-        &kp GRAVE         &kp PIPE                 &kp AMPERSAND             &kp LESS_THAN                &kp GREATER_THAN             &none                    &kp MINUS  &kp N1               &kp N2               &kp N3                   &kp SLASH           &kp CARET
+        &kp GRAVE         &kp GRAVE                &kp PIPE                  &kp AMPERSAND                &kp LESS_THAN                &kp GREATER_THAN         &kp MINUS  &kp N1               &kp N2               &kp N3                   &kp SLASH           &kp CARET
                                                                              &lt 1 ENTER                  &trans                       &mt LEFT_SHIFT SPACE     &trans     &kp PERIOD           &kp N0
       >;
     };
